@@ -1,0 +1,50 @@
+{
+  "name": "package.json",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "server": "json-server data/db.json --port 3001",
+    "test": "vitest run --environment jsdom",
+    "test:coverage": "vitest --coverage",
+    "test:coverage:report": "vitest --coverage --reporter=html",
+    "test:coverage:report:open": "vitest --coverage --reporter=html --reporter=lcov && open coverage/lcov-report/index.html",
+    "test:coverage:report:open:all": "vitest --coverage --reporter=html --reporter=lcov && open coverage/lcov-report/index.html && open coverage/lcov-report/index.html"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.0.1",
+    "@mui/material": "^7.0.1",
+    "@reduxjs/toolkit": "^2.6.1",
+    "axios": "^1.8.4",
+    "notistack": "^3.0.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.1.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.5.0",
+    "react-router-native": "^6.30.0",
+    "redux": "^5.0.1",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "jsdom": "^26.0.0",
+    "json-server": "^1.0.0-beta.3",
+    "vite": "^6.2.0",
+    "vitest": "^3.1.1"
+  }
+}
