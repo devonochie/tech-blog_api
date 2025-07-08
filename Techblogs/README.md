@@ -29,7 +29,7 @@ This project is part of a student's /Industrial Training assessment. It is desig
 
 ```bash
 # Clone the repository
-git clone https://github.com/devonochie -tech-blog.git
+git clone https://github.com/devonochie/tech-blog_api.git
 
 cd -tech-blog
 
